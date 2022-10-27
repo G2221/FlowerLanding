@@ -1,0 +1,3538 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: UbuntuBoldItalic;
+  src: url("../fonts/Ubuntu-BoldItalic.ttf");
+}
+@font-face {
+  font-family: UbuntuItalic;
+  src: url("../fonts/Ubuntu-Italic.ttf");
+}
+@font-face {
+  font-family: UbuntuLightItalic;
+  src: url("../fonts/Ubuntu-LightItalic.ttf");
+}
+@font-face {
+  font-family: UbuntuMedium;
+  src: url("../fonts/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: PhilosopherRegular;
+  src: url("../fonts/Philosopher-Regular.ttf");
+}
+@font-face {
+  font-family: ElMessiriRegular;
+  src: url("../fonts/ElMessiri-Regular.ttf");
+}
+@font-face {
+  font-family: SpectralSCRegular;
+  src: url("../fonts/SpectralSC-Regular.ttf");
+}
+.background-main {
+  background-image: url("../images/background-main.png");
+  background-size: cover;
+  background-position: bottom;
+  z-index: -10000;
+}
+.background-main .header {
+  background-color: #ede9ea;
+  padding: 25px 0 47px 0;
+}
+.background-main .header .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.background-main .header .header-container .logo {
+  height: 44px;
+}
+.background-main .header .header-container .logo .logo-img {
+  height: 100%;
+}
+.background-main .header .header-container .menu .close {
+  display: none;
+}
+.background-main .header .header-container .menu .menu-list {
+  list-style: none;
+  display: flex;
+  width: 580px;
+  justify-content: space-between;
+}
+.background-main .header .header-container .menu .menu-list .menu-item .menu-link {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  font-family: UbuntuRegular, sans-serif;
+}
+.background-main .header .header-container .menu .menu-list .phone {
+  display: none;
+}
+.background-main .header .header-container .phone {
+  display: flex;
+  align-items: center;
+}
+.background-main .header .header-container .phone .number {
+  margin-left: 9px;
+  font-family: PhilosopherRegular, sans-serif;
+  font-size: 20px;
+  color: #313131;
+}
+.background-main .header .header-container .burger {
+  display: none;
+}
+.background-main .main {
+  padding: 76px 0 233px 0;
+}
+.background-main .main .main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.background-main .main .main-container .main-title {
+  font-size: 50px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #000000;
+  max-width: 568px;
+  margin-bottom: 31px;
+}
+.background-main .main .main-container .main-text {
+  font-size: 18px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #303030;
+  margin-bottom: 40px;
+}
+.background-main .main .main-container .main-action .btn {
+  padding: 21px 20px 21px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  background-color: #d67515;
+  width: 220px;
+  border: none;
+  box-shadow: 0px 8px 20px 0px rgba(217, 149, 103, 0.8);
+  cursor: pointer;
+}
+.background-main .main .main-container .sale {
+  border-radius: 50%;
+  background-color: #000000;
+  box-shadow: 0px 0px 50.73px 6.27px rgba(87, 88, 87, 0.08);
+  position: absolute;
+  width: 133px;
+  height: 133px;
+  bottom: 10px;
+  right: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.background-main .main .main-container .sale .sale-text .sale-percentage {
+  font-size: 28px;
+  font-family: UbuntuBoldItalic, sans-serif;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+.background-main .main .main-container .sale .sale-text .sale-date {
+  font-size: 16px;
+  font-family: UbuntuItalic, sans-serif;
+  color: #ffffff;
+}
+.background-main .main .main-container .quote {
+  background-color: #c4c4c33d;
+  backdrop-filter: blur(8px);
+  position: absolute;
+  right: 55px;
+  bottom: -283px;
+  padding: 26px 11px 26px 23px;
+}
+.background-main .main .main-container .quote .quote-text {
+  font-size: 16px;
+  font-family: UbuntuItalic, sans-serif;
+  color: #000000;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: left;
+  max-width: 416px;
+}
+.background-main .main .main-container .quote .quote-signature {
+  font-size: 16px;
+  font-family: UbuntuItalic, sans-serif;
+  color: #000000;
+  text-align: right;
+}
+.background {
+  background-image: url("../images/background.png");
+  background-size: 100%;
+  background-position: top;
+  z-index: -10000;
+}
+.background .products {
+  padding: 208px 0 136px 0;
+}
+.background .products .products-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .products .products-content .products-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.background .products .products-content .slick-slider {
+  position: relative;
+}
+.background .products .products-content .slick-slider .slick-prev {
+  position: absolute;
+  bottom: -50%;
+  left: 1px;
+  z-index: 100;
+  height: 29px;
+  width: 16px;
+}
+.background .products .products-content .slick-slider .slick-prev::before {
+  content: url(../images/slick-prev.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.background .products .products-content .slick-slider .slick-next {
+  position: absolute;
+  height: 29px;
+  width: 16px;
+  right: 1px;
+  bottom: 1px;
+  z-index: 100;
+}
+.background .products .products-content .slick-slider .slick-next::before {
+  content: url(../images/slick-next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.background .products .products-content .slick-slider .slider-item {
+  position: relative;
+  width: 384px;
+  height: 390px;
+  margin: 0 11.5px 58px 11.5px;
+}
+.background .products .products-content .slick-slider .slider-item.slide1 {
+  background-image: url(../images/product1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1000;
+  box-shadow: 2px 19px 21px 3px rgba(184, 183, 183, 0.35);
+}
+.background .products .products-content .slick-slider .slider-item.slide2 {
+  background-image: url(../images/product2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1000;
+  box-shadow: 2px 19px 21px 3px rgba(184, 183, 183, 0.35);
+}
+.background .products .products-content .slick-slider .slider-item.slide3 {
+  background-image: url(../images/product3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1000;
+  box-shadow: 2px 19px 21px 3px rgba(184, 183, 183, 0.35);
+}
+.background .products .products-content .slick-slider .slider-item .product-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 21px 20px 21px;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+}
+.background .products .products-content .slick-slider .slider-item .product-info .product-name {
+  font-size: 18px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #000000;
+}
+.background .products .products-content .slick-slider .slider-item .product-info .product-price {
+  font-size: 18px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #000000;
+}
+.background .products .products-content .slick-slider .slider-item .animal-safe {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  box-sizing: border-box;
+  background-color: #80994b;
+  padding: 13px 12px 11px 12px;
+}
+.background .products .products-content .slick-slider .slider-item .animal-safe .footprint-shape {
+  height: 15px;
+  margin-right: 11px;
+}
+.background .products .products-content .slick-slider .slider-item .animal-safe .animal-safe-text {
+  font-size: 12px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .products .products-content .slider-controls {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.background .products .products-content .slider-controls .slide-m-prev {
+  height: 29px;
+  width: 16px;
+  cursor: pointer;
+  margin-right: 80px;
+}
+.background .products .products-content .slider-controls .slide-m-dots .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -12px;
+  right: calc(50% - 40px);
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  width: 80px;
+}
+.background .products .products-content .slider-controls .slide-m-dots .slick-dots li {
+  margin: 0 0.25rem;
+}
+.background .products .products-content .slider-controls .slide-m-dots .slick-dots button {
+  display: block;
+  padding: 0;
+  background-color: transparent;
+  text-indent: -9999px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #191917;
+}
+.background .products .products-content .slider-controls .slide-m-dots .slick-dots li.slick-active button {
+  border: 1px solid #191917;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 14px;
+  height: 14px;
+}
+.background .products .products-content .slider-controls .slide-m-next {
+  height: 29px;
+  width: 16px;
+  cursor: pointer;
+  margin-left: 80px;
+}
+.background .reasons .reasons-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .reasons .reasons-container .background-reasons {
+  width: 100%;
+  height: 624px;
+  position: relative;
+  background-image: url("../images/background-reasons.png");
+  background-size: cover;
+  box-shadow: 0 19px 21px 0 rgba(184, 183, 183, 0.35);
+}
+.background .reasons .reasons-container .background-reasons .reasons-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 609px;
+  padding: 58px 36px 0 0;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #000000;
+  margin-bottom: 60px;
+  margin-left: 18px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks {
+  display: grid;
+  grid-template-columns: 286px 290px;
+  grid-template-rows: 120px 120px 120px;
+  column-gap: 33px;
+  row-gap: 15px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 55px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason2 {
+  margin-top: 70px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason4 {
+  margin-top: 70px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-number {
+  font-size: 80px;
+  font-family: UbuntuLightItalic, sans-serif;
+  background: #F7C385;
+  background: -webkit-linear-gradient(to top, #F7C385 0%, #db8025 100%);
+  background: -moz-linear-gradient(to top, #F7C385 0%, #db8025 100%);
+  background: linear-gradient(to top, #F7C385 0%, #db8025 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  margin-right: 18px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-text {
+  margin-top: 20px;
+  width: 230px;
+  font-size: 16px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #000000;
+  line-height: 1.5;
+}
+.background .reasons .reasons-container .background-reasons .reasons-quote {
+  position: absolute;
+  bottom: -30px;
+  left: 26px;
+  background-color: #ffffff3d;
+  backdrop-filter: blur(30px);
+  padding: 27px 22px 26px 24px;
+  box-shadow: 2px 19px 21px 3px rgba(184, 183, 183, 0.35);
+}
+.background .reasons .reasons-container .background-reasons .reasons-quote .quote-text {
+  font-size: 16px;
+  font-family: UbuntuItalic, sans-serif;
+  color: #000000;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: left;
+  max-width: 386px;
+}
+.background .reasons .reasons-container .background-reasons .reasons-quote .quote-signature {
+  font-size: 16px;
+  font-family: UbuntuItalic, sans-serif;
+  color: #000000;
+  text-align: right;
+}
+.background .advantages {
+  padding: 180px 0 105px 0;
+}
+.background .advantages .advantages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .advantages .advantages-container .advantages-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.background .advantages .advantages-container .advantages-cards {
+  display: grid;
+  column-gap: 28px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  vertical-align: bottom;
+}
+.background .advantages .advantages-container .advantages-cards .advantages-card {
+  background-color: #edece7;
+  width: 210px;
+  padding: 0 12px 0 12px;
+  box-shadow: 0 19px 21px 0 rgba(184, 183, 183, 0.35);
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+.background .advantages .advantages-container .advantages-cards .advantages-card .advantages-pic-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 159px;
+}
+.background .advantages .advantages-container .advantages-cards .advantages-card .advantages-text {
+  font-size: 18px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #000000;
+  line-height: 1.111;
+  height: 51px;
+}
+.background .exotic-plants {
+  padding: 105px 0 45px 0;
+}
+.background .exotic-plants .exotic-plants-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #231c14;
+  text-align: left;
+  margin-bottom: 29px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-text {
+  max-width: 517px;
+  font-size: 18px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  line-height: 1.556;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards {
+  display: grid;
+  grid-template-columns: 282px 282px 508px;
+  grid-template-rows: 245px 1fr;
+  gap: 64px;
+  grid-template-areas: "exotic-plants-card1 exotic-plants-card3 exotic-plants-card5" "exotic-plants-card2 exotic-plants-card4 exotic-plants-card5";
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 {
+  background-image: url(../images/exotic-plants1.png);
+  background-size: cover;
+  margin-top: 128px;
+  width: 282px;
+  height: 244px;
+  position: relative;
+  grid-area: exotic-plants-card1;
+  border: none;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/exotic-plants-background-small.png);
+  background-size: cover;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px 15px 12px 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-name {
+  font-size: 18px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-price {
+  font-size: 18px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-price-crossed {
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 {
+  background-image: url(../images/exotic-plants2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 128px;
+  width: 282px;
+  height: 244px;
+  position: relative;
+  grid-area: exotic-plants-card2;
+  border: none;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/exotic-plants-background-small.png);
+  background-size: cover;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px 15px 12px 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-name {
+  font-size: 18px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-price {
+  font-size: 18px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-price-crossed {
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .sticker-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  background-color: #d67515;
+  width: 43px;
+  height: 43px;
+  font-size: 14px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 {
+  background-image: url(../images/exotic-plants3.png);
+  background-size: cover;
+  margin-top: 64px;
+  width: 282px;
+  height: 244px;
+  position: relative;
+  grid-area: exotic-plants-card3;
+  border: none;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/exotic-plants-background-small.png);
+  background-size: cover;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px 15px 12px 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-name {
+  font-size: 18px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-price {
+  font-size: 18px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-price-crossed {
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 {
+  background-image: url(../images/exotic-plants4.png);
+  background-size: cover;
+  margin-top: 64px;
+  width: 282px;
+  height: 244px;
+  position: relative;
+  grid-area: exotic-plants-card4;
+  border: none;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/exotic-plants-background-small.png);
+  background-size: cover;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px 15px 12px 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-name {
+  font-size: 18px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-price {
+  font-size: 18px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-price-crossed {
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 {
+  background-image: url(../images/exotic-plants5.png);
+  background-size: cover;
+  grid-area: exotic-plants-card5;
+  border: none;
+  width: 508px;
+  height: 512px;
+  position: relative;
+  overflow: hidden;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 .price {
+  display: flex;
+  align-items: center;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 .exotic-plants-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/exotic-plants-background-small.png);
+  background-size: cover;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px 15px 12px 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 .exotic-plants-card-name {
+  font-size: 18px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 .exotic-plants-card-price {
+  font-size: 18px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 .exotic-plants-card-price-crossed {
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 .ribbon {
+  width: 250px;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  left: -60px;
+  transform: rotate(-45deg);
+  background-color: #c20000;
+  font-size: 14px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  -moz-transform: matrix(0.70710678, -0.70710678, 0.70710678, 0.70710678, 0, 0);
+  -webkit-transform: matrix(0.70710678, -0.70710678, 0.70710678, 0.70710678, 0, 0);
+  -ms-transform: matrix(0.70710678, -0.70710678, 0.70710678, 0.70710678, 0, 0);
+  box-sizing: border-box;
+}
+.background .master-class {
+  padding: 45px 0 100px 0;
+}
+.background .master-class .master-class-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .master-class .master-class-container .master-class-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #231c14;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.background .master-class .master-class-container .master-class-text {
+  font-size: 18px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #231c14;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.background .master-class .master-class-container .master-class-video {
+  width: 100%;
+  height: 600px;
+}
+.background .order {
+  background-image: url("../images/background-form.png");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #f6f2eb;
+  padding-bottom: 110px;
+}
+.background .order .container-order {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .order .container-order .order-form-background {
+  padding: 73px 78px 70px 78px;
+  background-color: #f7f5f2;
+  width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.background .order .container-order .order-form-background .order-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.background .order .container-order .order-form-background .order-text {
+  font-size: 18px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  line-height: 1.556;
+  text-align: center;
+  margin: 0 auto 32px auto;
+  max-width: 400px;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name {
+  width: 444px;
+  position: relative;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name .order-form-text {
+  font-size: 16px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  line-height: 1.75;
+  text-align: left;
+  margin-bottom: 7px;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name .order-form-input {
+  padding: 18px 20px 18px 53px;
+  background-color: #ffffff;
+  box-shadow: 0px 21px 21px 0px rgba(184, 183, 183, 0.2);
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  border: 1px solid #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  outline: none;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name .order-form-input::placeholder {
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name .order-form-input:disabled {
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name .error-input {
+  font-size: 13px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #c20000;
+  position: absolute;
+  bottom: -40px;
+  left: 25px;
+  display: none;
+}
+.background .order .container-order .order-form-background .order-form .order-input-name .order-name-icon {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number {
+  width: 444px;
+  position: relative;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number .order-form-text {
+  font-size: 16px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  line-height: 1.75;
+  text-align: left;
+  margin-bottom: 7px;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number .order-form-input {
+  padding: 18px 20px 18px 53px;
+  background-color: #ffffff;
+  box-shadow: 0px 21px 21px 0px rgba(184, 183, 183, 0.2);
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  border: 1px solid #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  outline: none;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number .order-form-input::placeholder {
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number .order-form-input:disabled {
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number .error-input {
+  font-size: 13px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #c20000;
+  position: absolute;
+  bottom: -38px;
+  right: 19px;
+  width: 400px;
+  display: none;
+}
+.background .order .container-order .order-form-background .order-form .order-input-number .order-number-icon {
+  position: absolute;
+  bottom: 0;
+  right: 403px;
+}
+.background .order .container-order .order-form-background .order-form .order-input-flower {
+  width: 444px;
+  position: relative;
+}
+.background .order .container-order .order-form-background .order-form .order-input-flower .order-form-text {
+  font-size: 16px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  line-height: 1.75;
+  text-align: left;
+  margin-bottom: 7px;
+}
+.background .order .container-order .order-form-background .order-form .order-input-flower .order-form-input {
+  padding: 18px 20px 18px 53px;
+  background-color: #ffffff;
+  box-shadow: 0px 21px 21px 0px rgba(184, 183, 183, 0.2);
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  border: 1px solid #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  outline: none;
+}
+.background .order .container-order .order-form-background .order-form .order-input-flower .order-form-input::placeholder {
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-input-flower .order-form-input:disabled {
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-input-flower .error-input {
+  font-size: 13px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #c20000;
+  position: absolute;
+  bottom: -38px;
+  right: 19px;
+  width: 400px;
+  display: none;
+}
+.background .order .container-order .order-form-background .order-form .order-flower-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../images/option-select.png") 96% / 5% no-repeat, #ffffff;
+  cursor: pointer;
+  color: #929292;
+}
+.background .order .container-order .order-form-background .order-form .order-flower-icon {
+  position: absolute;
+  bottom: 0;
+  right: 403px;
+}
+.background .order .container-order .order-form-background .order-form .order-flower-placeholder {
+  color: #929292;
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 173px;
+  width: max-content;
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox {
+  position: relative;
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .error-input {
+  font-size: 13px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #c20000;
+  position: absolute;
+  bottom: -22px;
+  right: 20px;
+  width: 400px;
+  display: none;
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .checkbox-text {
+  margin-left: 39px;
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 21px 0 rgba(184, 183, 183, 0.35);
+  position: absolute;
+  bottom: -11px;
+  right: 424px;
+  transform: translateY(-50%);
+  outline: none;
+  cursor: pointer;
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:checked {
+  background-color: #929292;
+  border-color: hsl(0, 0%, 40%);
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:checked + label {
+  text-decoration: line-through;
+  color: hsl(0, 0%, 70%);
+  font-weight: 600;
+  background-color: hsl(0, 0%, 97%);
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:checked:focus,
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:checked:hover {
+  border-color: hsl(0, 0%, 40%);
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPmljb25fYnlfUG9zaGx5YWtvdjEwPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjZmZmZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4wMDAwMDAsIDI2LjAwMDAwMCkiPjxwYXRoIGQ9Ik0xNy45OTk5ODc4LDMyLjQgTDEwLjk5OTk4NzgsMjUuNCBDMTAuMjI2Nzg5MSwyNC42MjY4MDE0IDguOTczMTg2NDQsMjQuNjI2ODAxNCA4LjE5OTk4Nzc5LDI1LjQgTDguMTk5OTg3NzksMjUuNCBDNy40MjY3ODkxNCwyNi4xNzMxOTg2IDcuNDI2Nzg5MTQsMjcuNDI2ODAxNCA4LjE5OTk4Nzc5LDI4LjIgTDE2LjU4NTc3NDIsMzYuNTg1Nzg2NCBDMTcuMzY2ODIyOCwzNy4zNjY4MzUgMTguNjMzMTUyOCwzNy4zNjY4MzUgMTkuNDE0MjAxNCwzNi41ODU3ODY0IEw0MC41OTk5ODc4LDE1LjQgQzQxLjM3MzE4NjQsMTQuNjI2ODAxNCA0MS4zNzMxODY0LDEzLjM3MzE5ODYgNDAuNTk5OTg3OCwxMi42IEw0MC41OTk5ODc4LDEyLjYgQzM5LjgyNjc4OTEsMTEuODI2ODAxNCAzOC41NzMxODY0LDExLjgyNjgwMTQgMzcuNzk5OTg3OCwxMi42IEwxNy45OTk5ODc4LDMyLjQgWiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:focus,
+.background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms:hover {
+  border-color: hsl(0, 0%, 55%);
+}
+.background .order .container-order .order-form-background .order-button {
+  width: 444px;
+  height: 58px;
+  margin-top: 38px;
+  border: 1px solid #d67515;
+  background-color: #d67515;
+  box-sizing: border-box;
+  padding: 21px 0 21px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.background .order .container-order .thanks {
+  padding: 225px 91px 70px 93px;
+  background-color: #f6f2eb3b;
+  width: 600px;
+  height: 816.65px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  display: none;
+  position: relative;
+}
+.background .order .container-order .thanks .close-thanks {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+.background .order .container-order .thanks .close-thanks .close-image-thanks {
+  width: 100%;
+}
+.background .order .container-order .thanks .thanks-block .thanks-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #231c14;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.background .order .container-order .thanks .thanks-block .thanks-title .thanks-title br {
+  display: none;
+}
+.background .order .container-order .thanks .thanks-block .thanks-text {
+  font-size: 18px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #313131;
+  line-height: 1.222;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.background .instagram {
+  background-color: #f6f2eb;
+  padding: 61px 0 60px 0;
+}
+.background .instagram .instagram-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.background .instagram .instagram-container .instagram-title {
+  font-size: 35px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #040404;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.background .instagram .instagram-container .instagram-link {
+  font-size: 20px;
+  font-family: ElMessiriRegular, sans-serif;
+  color: #231c14;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.background .instagram .instagram-container .instagram-photo {
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  grid-template-areas: "photo1 photo2 photo3" "photo4 photo5 photo3";
+}
+.background .instagram .instagram-container .instagram-photo .photo1 {
+  grid-area: photo1;
+  border: none;
+}
+.background .instagram .instagram-container .instagram-photo .photo2 {
+  grid-area: photo2;
+  border: none;
+}
+.background .instagram .instagram-container .instagram-photo .photo3 {
+  grid-area: photo3;
+  border: none;
+}
+.background .instagram .instagram-container .instagram-photo .photo4 {
+  grid-area: photo4;
+  border: none;
+}
+.background .instagram .instagram-container .instagram-photo .photo5 {
+  grid-area: photo5;
+  border: none;
+}
+.footer {
+  padding: 61px 0 57px 0;
+  background-color: #222222;
+}
+.footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 125px;
+}
+.footer .footer-container .block1 {
+  width: 179px;
+}
+.footer .footer-container .block1 .logo {
+  width: 138px;
+  margin-bottom: 46px;
+}
+.footer .footer-container .block1 .social-network {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .block1 .social-network .footer-instagram:hover {
+  opacity: 0.7;
+}
+.footer .footer-container .block1 .social-network .footer-telegram:hover {
+  opacity: 0.7;
+}
+.footer .footer-container .block1 .social-network .footer-facebook:hover {
+  opacity: 0.7;
+}
+.footer .footer-container .block2 {
+  width: 237px;
+  margin-top: 33px;
+  margin-right: 89px;
+}
+.footer .footer-container .block2 .footer-menu {
+  margin-bottom: 81px;
+}
+.footer .footer-container .block2 .footer-menu .footer-menu-text {
+  margin-bottom: 19px;
+  cursor: pointer;
+}
+.footer .footer-container .block2 .footer-menu .footer-menu-text .footer-menu-text-link {
+  font-size: 15px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer-container .block2 .contact-number .footer-menu-text {
+  font-size: 15px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 23px;
+}
+.footer .footer-container .block2 .contact-number .contact-number-number {
+  display: flex;
+}
+.footer .footer-container .block2 .contact-number .contact-number-number .number-text {
+  margin-right: 13px;
+  font-size: 24px;
+  font-family: PhilosopherRegular, sans-serif;
+  color: #d67515;
+}
+.footer .footer-container .block3 {
+  width: 445px;
+  margin-top: 33px;
+}
+.footer .footer-container .block3 .address {
+  margin-bottom: 81px;
+}
+.footer .footer-container .block3 .address .footer-menu-text {
+  font-size: 15px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 19px;
+}
+.footer .footer-container .block3 .address .address-text {
+  font-size: 14px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+  max-width: 338px;
+  line-height: 1.429;
+}
+.footer .footer-container .block3 .address .address-text br {
+  display: none;
+}
+.footer .footer-container .block3 .mailing .mailing-text {
+  font-size: 15px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  max-width: 262px;
+  line-height: 1.467;
+}
+.footer .footer-container .block3 .mailing .mailing-form {
+  display: flex;
+}
+.footer .footer-container .block3 .mailing .mailing-form .mailing-thanks {
+  width: 444px;
+  font-size: 16px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #d67515;
+  display: none;
+}
+.footer .footer-container .block3 .mailing .mailing-form .mailing-input {
+  border: 1px solid #d67515;
+  background: #222222;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  height: 54px;
+  width: 284px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: UbuntuRegular, sans-serif;
+  outline: none;
+}
+.footer .footer-container .block3 .mailing .mailing-form .mailing-input::placeholder {
+  font-size: 16px;
+  font-family: UbuntuRegular, sans-serif;
+  color: #ffffff;
+}
+.footer .footer-container .block3 .mailing .mailing-form .mailing-btn {
+  width: 160px;
+  height: 54px;
+  border: 1px solid #d67515;
+  background-color: #d67515;
+  box-sizing: border-box;
+  padding: 21px 0 21px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: UbuntuMedium, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0;
+}
+.footer .footer-container .block3 .contact-number-adaptive {
+  display: none;
+}
+.footer .footer-container .block3 .social-network-adaptive {
+  display: none;
+}
+.loader {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fed;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+  .background-main .header .header-container {
+    max-width: 984px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .background-main .header .header-container .logo {
+    margin: 0;
+    width: 130px;
+  }
+  .background-main .header .header-container .burger {
+    display: block;
+  }
+  .background-main .header .header-container .burger .burger-svg {
+    width: 32px;
+    height: 22px;
+  }
+  .background-main .header .header-container .menu {
+    display: none;
+  }
+  .background-main .header .header-container .menu {
+    position: fixed;
+    width: 100%;
+    height: 261px;
+    margin: 0;
+    padding: 45px 0 24px 0;
+    top: 0;
+    left: 0;
+    background: #f7f5f1;
+    z-index: 100;
+  }
+  .background-main .header .header-container .menu.open {
+    display: flex;
+    align-items: center;
+  }
+  .background-main .header .header-container .menu .close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #313131;
+    position: absolute;
+    top: 39px;
+    right: 15px;
+  }
+  .background-main .header .header-container .menu .menu-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  .background-main .header .header-container .menu .menu-list .menu-item {
+    margin-bottom: 25px;
+  }
+  .background-main .header .header-container .menu .menu-list .menu-item .menu-link {
+    color: #313131;
+  }
+  .background-main .header .header-container .menu .menu-list .menu-item .menu-link:hover {
+    color: #d67515;
+  }
+  .background-main .header .header-container .menu .menu-list .phone {
+    display: flex;
+    text-decoration: none;
+    outline: none;
+    margin-top: 15px;
+  }
+  .background-main .header .header-container .phone {
+    display: none;
+  }
+  .background-main .main .main-container {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .products .products-content {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .reasons .reasons-container {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .reasons .reasons-container .background-reasons {
+    width: 100%;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-title {
+    text-align: right;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks {
+    background-color: #ffffff3d;
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    column-gap: 15px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-quote {
+    padding: 16px 19px 15px 23px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-quote .quote-text {
+    font-size: 14px;
+    line-height: 1.429;
+    width: 226px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-quote .quote-signature {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .background .advantages .advantages-container {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .advantages .advantages-container .advantages-cards {
+    grid-template-columns: 210px 210px 210px;
+    gap: 30px;
+    justify-content: space-around;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card4 {
+    margin-left: 160px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card5 {
+    margin-left: 160px;
+  }
+  .background .exotic-plants .exotic-plants-container {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards {
+    grid-template-columns: 240px 240px 460px;
+    grid-template-rows: 245px 1fr;
+    gap: 22px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 {
+    background-size: 100%;
+    width: 240px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 {
+    background-size: 100%;
+    width: 240px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 {
+    background-size: 100%;
+    width: 240px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 {
+    background-size: 100%;
+    width: 240px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 {
+    width: 460px;
+  }
+  .background .master-class .master-class-container {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .order .container-order {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .instagram .instagram-container {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .background .instagram .instagram-container .instagram-photo {
+    width: 984px;
+    display: grid;
+    grid-template-columns: 327px 327px 327px;
+    grid-template-rows: 243px 243px;
+    gap: 0;
+    grid-template-areas: "photo1 photo2 photo3" "photo4 photo5 photo3";
+  }
+  .background .instagram .instagram-container .instagram-photo .photo1 {
+    width: 327px;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo2 {
+    width: 327px;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo3 {
+    height: 100%;
+    width: 327px;
+    overflow: hidden;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo4 {
+    width: 327px;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo5 {
+    width: 327px;
+  }
+  .footer .footer-container {
+    max-width: 984px;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 0;
+  }
+  .footer .footer-container .block2 {
+    margin-right: 0;
+  }
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+  .background-main {
+    background-size: 100%;
+  }
+  .background-main .header .header-container {
+    max-width: 728px;
+  }
+  .background-main .main .main-container {
+    max-width: 728px;
+  }
+  .background-main .main .main-container .sale {
+    right: 123px;
+  }
+  .background .products .products-content {
+    max-width: 728px;
+  }
+  .background .products .products-content .slider-item {
+    width: auto;
+    height: 350px;
+    margin: 0 6px 0 6px;
+  }
+  .background .reasons {
+    background-image: url("../../images/background-reasons.png");
+    background-size: cover;
+    padding: 36px 0 133px 0;
+  }
+  .background .reasons .reasons-container {
+    max-width: 728px;
+  }
+  .background .reasons .reasons-container .background-reasons {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+    background-image: none;
+    background-size: cover;
+    box-shadow: none;
+    padding: 20px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info {
+    position: static;
+    background-color: #ffffff3d;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-title {
+    text-align: center;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks {
+    display: block;
+    background-color: transparent;
+    backdrop-filter: none;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason2 {
+    margin-top: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason4 {
+    margin-top: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-number {
+    font-size: 60.244px;
+    margin-right: 18px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-text {
+    margin-top: 0;
+    width: 100%;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-quote {
+    bottom: -205px;
+    left: 11px;
+  }
+  .background .advantages .advantages-container {
+    max-width: 728px;
+  }
+  .background .exotic-plants .exotic-plants-container {
+    max-width: 728px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-text {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.375;
+    margin-bottom: 49px;
+    text-align: center;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 358px 358px;
+    grid-template-rows: 320px 287px 287px;
+    gap: 12px;
+    grid-template-areas: "exotic-plants-card5 exotic-plants-card5" "exotic-plants-card1 exotic-plants-card2" "exotic-plants-card3 exotic-plants-card4";
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 {
+    background-image: url(../images/exotic-plants1.png);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    width: 358px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card1;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 {
+    background-image: url(../images/exotic-plants2.png);
+    background-position: top center;
+    background-size: 100%;
+    margin-top: 0;
+    width: 358px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card2;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 {
+    background-image: url(../images/exotic-plants3.png);
+    background-position: 75%;
+    background-size: cover;
+    margin-top: 0;
+    width: 358px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card3;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 {
+    background-image: url(../images/exotic-plants4.png);
+    background-position: 75%;
+    background-size: cover;
+    margin-top: 0;
+    width: 358px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card4;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 {
+    background-image: url(../images/exotic-plants5.png);
+    background-position: center center;
+    background-size: cover;
+    width: 728px;
+    height: 320px;
+  }
+  .background .master-class .master-class-container {
+    max-width: 728px;
+  }
+  .background .order .container-order {
+    max-width: 728px;
+  }
+  .background .instagram {
+    padding: 92px 0 148px 0;
+  }
+  .background .instagram .instagram-container {
+    max-width: 728px;
+  }
+  .background .instagram .instagram-container .instagram-photo {
+    width: 728px;
+    display: grid;
+    grid-template-columns: 364px 364px;
+    grid-template-rows: 732px 270px 270px;
+    gap: 0;
+    grid-template-areas: "photo3 photo3" "photo1 photo2" "photo4 photo5";
+  }
+  .background .instagram .instagram-container .instagram-photo .photo1 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo2 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo3 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo4 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo5 {
+    width: 100%;
+  }
+  .footer .footer-container {
+    max-width: 728px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-template-areas: "block1 block3" "block2 block3";
+  }
+  .footer .footer-container .block1 {
+    grid-area: block1;
+  }
+  .footer .footer-container .block2 {
+    grid-area: block2;
+  }
+  .footer .footer-container .block3 {
+    grid-area: block3;
+  }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+  .background-main {
+    background-image: url("../../images/background-main.png");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .background-main .header .header-container {
+    max-width: 406px;
+  }
+  .background-main .main {
+    padding: 40px 0 94px 0;
+  }
+  .background-main .main .main-container {
+    max-width: 548px;
+    position: relative;
+  }
+  .background-main .main .main-container .main-title {
+    text-align: center;
+  }
+  .background-main .main .main-container .main-text {
+    text-align: center;
+  }
+  .background-main .main .main-container .main-action {
+    text-align: center;
+  }
+  .background-main .main .main-container .sale {
+    position: static;
+    margin-top: 59px;
+    margin-left: 12px;
+  }
+  .background-main .main .main-container .quote {
+    position: absolute;
+    right: 11px;
+    bottom: -131px;
+    padding: 20px 19px 20px 19px;
+  }
+  .background-main .main .main-container .quote .quote-text {
+    font-size: 14px;
+    line-height: 1.214;
+    width: 230px;
+  }
+  .background-main .main .main-container .quote .quote-signature {
+    font-size: 14px;
+  }
+  .background {
+    background-size: cover;
+  }
+  .background .products {
+    padding: 143px 0 71px 0;
+  }
+  .background .products .products-content {
+    max-width: 406px;
+  }
+  .background .products .products-content .products-title {
+    margin-bottom: 40px;
+  }
+  .background .products .products-content .slick-slider {
+    position: relative;
+  }
+  .background .products .products-content .slick-slider .slick-prev {
+    position: absolute;
+    bottom: -50%;
+    left: 1px;
+    z-index: 100;
+    height: 20px;
+    width: 10px;
+  }
+  .background .products .products-content .slick-slider .slick-prev::before {
+    content: url(../images/slick-prev-320.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .background .products .products-content .slick-slider .slick-next {
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    right: 1px;
+    bottom: 1px;
+    z-index: 100;
+  }
+  .background .products .products-content .slick-slider .slick-next::before {
+    content: url(../images/slick-next-320.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .background .products .products-content .slick-slider .slider-item {
+    width: 139px;
+    height: 302px;
+    margin: 0 6px 0 6px;
+  }
+  .background .products .products-content .slick-slider .slider-item.slide1 {
+    background-image: url(../images/product1-320.png);
+  }
+  .background .products .products-content .slick-slider .slider-item.slide2 {
+    background-image: url(../images/product2-320.png);
+  }
+  .background .products .products-content .slick-slider .slider-item.slide3 {
+    background-image: url(../images/product3.png);
+  }
+  .background .products .products-content .slick-slider .slider-item .product-info {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .background .products .products-content .slick-slider .slider-item .product-info .product-name {
+    line-height: 1.222;
+    margin-bottom: 10px;
+  }
+  .background .products .products-content .slick-slider .slider-item .animal-safe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 13px 8px 13px;
+  }
+  .background .products .products-content .slick-slider .slider-item .animal-safe .footprint-shape {
+    margin-right: 7px;
+  }
+  .background .products .products-content .slick-slider .slider-item .animal-safe .animal-safe-text {
+    line-height: 1.167;
+    text-align: right;
+  }
+  .background .products .products-content .slider-controls {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 52px;
+  }
+  .background .products .products-content .slider-controls .slide-m-prev {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+    margin-right: 80px;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -22px;
+    right: calc(50% - 45px);
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    width: 80px;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots li {
+    margin: 0 0.25rem;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots button {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    text-indent: -9999px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #191917;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots li.slick-active button {
+    border: 1px solid #191917;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 14px;
+    height: 14px;
+  }
+  .background .products .products-content .slider-controls .slide-m-next {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+    margin-left: 80px;
+  }
+  .background .reasons {
+    background-image: url("../../images/background-reasons320.png");
+    background-size: cover;
+    padding: 36px 0 133px 0;
+  }
+  .background .reasons .reasons-container {
+    max-width: 406px;
+  }
+  .background .reasons .reasons-container .background-reasons {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: none;
+    background-size: cover;
+    box-shadow: none;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info {
+    position: static;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-title {
+    margin-bottom: 50px;
+    margin-left: 0;
+    font-size: 28px;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks {
+    display: block;
+    width: 100%;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason2 {
+    margin-top: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason4 {
+    margin-top: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-number {
+    font-size: 60.244px;
+    margin-right: 18px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-text {
+    margin-top: 0;
+    width: 100%;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-quote {
+    bottom: -205px;
+    left: 11px;
+  }
+  .background .advantages {
+    padding: 129px 0 40px 0;
+  }
+  .background .advantages .advantages-container {
+    max-width: 406px;
+    margin: 0 auto;
+  }
+  .background .advantages .advantages-container .advantages-title {
+    margin-bottom: 40px;
+  }
+  .background .advantages .advantages-container .advantages-cards {
+    grid-template-columns: 197px 197px;
+    gap: 12px;
+    justify-content: space-around;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card {
+    width: 197px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card4 {
+    margin-left: 0;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card5 {
+    margin-left: 105px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card .advantages-text {
+    font-size: 17px;
+  }
+  .background .exotic-plants {
+    padding: 40px 0 49px 0;
+  }
+  .background .exotic-plants .exotic-plants-container {
+    max-width: 406px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-title {
+    font-size: 21px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.375;
+    margin-bottom: 49px;
+    text-align: center;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 197px 197px;
+    grid-template-rows: 320px 287px 287px;
+    gap: 12px;
+    grid-template-areas: "exotic-plants-card5 exotic-plants-card5" "exotic-plants-card1 exotic-plants-card2" "exotic-plants-card3 exotic-plants-card4";
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 {
+    background-image: url(../images/exotic-plants1.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    width: 197px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card1;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 {
+    background-image: url(../images/exotic-plants2.png);
+    background-position: top center;
+    background-size: cover;
+    margin-top: 0;
+    width: 197px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card2;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 {
+    background-image: url(../images/exotic-plants3.png);
+    background-position: 75%;
+    background-size: cover;
+    margin-top: 0;
+    width: 197px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card3;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 {
+    background-image: url(../images/exotic-plants4.png);
+    background-position: 75%;
+    background-size: cover;
+    margin-top: 0;
+    width: 197px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card4;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 {
+    background-image: url(../images/exotic-plants5.png);
+    background-position: center center;
+    background-size: cover;
+    width: 406px;
+    height: 320px;
+  }
+  .background .master-class {
+    padding: 49px 0 100px 0;
+  }
+  .background .master-class .master-class-container {
+    max-width: 406px;
+  }
+  .background .master-class .master-class-container .master-class-video {
+    height: 300px;
+  }
+  .background .order {
+    padding-bottom: 130px;
+    background-image: url("../../images/background-form.png");
+    background-size: cover;
+    background-position: bottom;
+    background-color: #f6f2eb;
+  }
+  .background .order .container-order {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .order .container-order .order-form-background {
+    padding: 40px 40px 40px 40px;
+    width: 290px;
+  }
+  .background .order .container-order .order-form-background .order-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .background .order .container-order .order-form-background .order-text {
+    width: 234px;
+    line-height: 1.167;
+    margin-bottom: 40px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name {
+    width: 100%;
+    position: relative;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .order-form-text {
+    font-size: 15px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .order-form-input {
+    padding: 17px 15px 16px 41px;
+    font-size: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .error-input {
+    bottom: -40px;
+    left: 25px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .order-name-icon {
+    bottom: 0;
+    left: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number {
+    width: 100%;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .order-form-text {
+    font-size: 15px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .order-form-input {
+    padding: 17px 15px 16px 41px;
+    font-size: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .error-input {
+    font-size: 13px;
+    font-family: UbuntuRegular, sans-serif;
+    color: #c20000;
+    bottom: -38px;
+    right: 34px;
+    width: 200px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .order-number-icon {
+    bottom: -4px;
+    right: 173px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower {
+    width: 100%;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower .order-form-text {
+    font-size: 15px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower .order-form-input {
+    padding: 17px 15px 16px 41px;
+    font-size: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower .error-input {
+    bottom: -35px;
+    right: 34px;
+    width: 200px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-flower-icon {
+    bottom: 0;
+    right: 173px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-flower-placeholder {
+    left: -166px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-checkbox .error-input {
+    bottom: -18px;
+    right: 31px;
+    width: 200px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-checkbox .checkbox-text {
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 1.286;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms {
+    bottom: 5px;
+    right: 188px;
+  }
+  .background .order .container-order .order-form-background .order-button {
+    width: 100%;
+  }
+  .background .order .container-order .thanks {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    padding: 165px 19px 0 20px;
+    top: 0;
+    left: 0;
+    background-color: #f6f2eb3b;
+    z-index: 100;
+  }
+  .background .order .container-order .thanks.open {
+    display: flex;
+    align-items: center;
+  }
+  .background .order .container-order .thanks .close-thanks {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .background .order .container-order .thanks .close-thanks .close-image-thanks {
+    width: 100%;
+  }
+  .background .order .container-order .thanks .thanks-block .thanks-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 1.25;
+    width: 280px;
+  }
+  .background .order .container-order .thanks .thanks-block .thanks-title .thanks-title br {
+    display: inline-block;
+  }
+  .background .order .container-order .thanks .thanks-block .thanks-text {
+    font-size: 18px;
+    line-height: 1.222;
+    text-align: center;
+    margin: 0 auto;
+    width: 280px;
+  }
+  .background .instagram {
+    padding: 72px 0 60px 0;
+  }
+  .background .instagram .instagram-container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .instagram .instagram-container .instagram-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .background .instagram .instagram-container .instagram-link {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .background .instagram .instagram-container .instagram-photo {
+    width: 290px;
+    display: grid;
+    grid-template-columns: 145px 145px;
+    grid-template-rows: 290px 107px 107px;
+    gap: 0;
+    grid-template-areas: "photo3 photo3" "photo1 photo2" "photo4 photo5";
+  }
+  .background .instagram .instagram-container .instagram-photo .photo1 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo2 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo3 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo4 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo5 {
+    width: 100%;
+  }
+  .footer {
+    padding: 60px 0 57px 0;
+  }
+  .footer .footer-container {
+    width: 290px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .footer .footer-container .block1 {
+    width: 100%;
+  }
+  .footer .footer-container .block1 .logo {
+    margin: 0 auto 49px auto;
+  }
+  .footer .footer-container .block1 .social-network {
+    display: none;
+  }
+  .footer .footer-container .block2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer .footer-container .block2 .footer-menu {
+    margin-bottom: 31px;
+  }
+  .footer .footer-container .block2 .footer-menu .footer-menu-text {
+    margin-bottom: 19px;
+  }
+  .footer .footer-container .block2 .contact-number {
+    display: none;
+  }
+  .footer .footer-container .block3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer .footer-container .block3 .address {
+    margin: 0 auto 50px auto;
+  }
+  .footer .footer-container .block3 .address .footer-menu-text {
+    margin-bottom: 18px;
+  }
+  .footer .footer-container .block3 .address .address-text {
+    max-width: 204px;
+    margin: 0 auto;
+  }
+  .footer .footer-container .block3 .address .address-text br {
+    display: inline-block;
+  }
+  .footer .footer-container .block3 .mailing {
+    margin-bottom: 50px;
+  }
+  .footer .footer-container .block3 .mailing .mailing-text {
+    margin: 0 auto 20px auto;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form {
+    display: block;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form .mailing-thanks {
+    margin: 0 auto;
+    width: 100%;
+    height: 110px;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form .mailing-input {
+    width: 290px;
+    margin-bottom: 10px;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form .mailing-btn {
+    width: 290px;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive {
+    display: block;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive .footer-menu-text {
+    font-size: 15px;
+    font-family: UbuntuMedium, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 18px;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive .contact-number-number {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive .contact-number-number .number-text {
+    margin-right: 13px;
+    font-size: 24px;
+    font-family: PhilosopherRegular, sans-serif;
+    color: #d67515;
+  }
+  .footer .footer-container .block3 .social-network-adaptive {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-instagram {
+    margin: 0 8px 0 8px;
+    width: 35px;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-instagram:hover {
+    opacity: 0.9;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-telegram {
+    margin: 0 8px 0 8px;
+    width: 38px;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-telegram:hover {
+    opacity: 0.9;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-facebook {
+    margin: 0 8px 0 8px;
+    width: 35px;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-facebook:hover {
+    opacity: 0.9;
+  }
+}
+/* 320 - 424 */
+@media screen and (max-width: 426px) {
+  .background-main {
+    background-image: url("../../images/background-main-320.png");
+    background-size: 100%;
+    background-position: bottom;
+  }
+  .background-main .header {
+    padding: 34px 0 38px 0;
+    height: 99px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebeaeb;
+  }
+  .background-main .header .header-container {
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .background-main .header .header-container .logo {
+    margin: 0;
+    width: 130px;
+  }
+  .background-main .header .header-container .burger {
+    display: block;
+  }
+  .background-main .header .header-container .burger .burger-svg {
+    width: 32px;
+    height: 22px;
+  }
+  .background-main .header .header-container .menu {
+    display: none;
+  }
+  .background-main .header .header-container .menu {
+    position: fixed;
+    width: 100%;
+    height: 261px;
+    margin: 0;
+    padding: 45px 0 24px 0;
+    top: 0;
+    left: 0;
+    background: #f7f5f1;
+    z-index: 100;
+  }
+  .background-main .header .header-container .menu.open {
+    display: flex;
+    align-items: center;
+  }
+  .background-main .header .header-container .menu .close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #313131;
+    position: absolute;
+    top: 39px;
+    right: 15px;
+  }
+  .background-main .header .header-container .menu .menu-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  .background-main .header .header-container .menu .menu-list .menu-item {
+    margin-bottom: 25px;
+  }
+  .background-main .header .header-container .menu .menu-list .menu-item .menu-link {
+    color: #313131;
+  }
+  .background-main .header .header-container .menu .menu-list .menu-item .menu-link:hover {
+    color: #d67515;
+  }
+  .background-main .header .header-container .menu .menu-list .phone {
+    display: flex;
+    text-decoration: none;
+    outline: none;
+    margin-top: 15px;
+  }
+  .background-main .header .header-container .phone {
+    display: none;
+  }
+  .background-main .main {
+    padding: 40px 0 233px 0;
+  }
+  .background-main .main .main-container {
+    width: 290px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .background-main .main .main-container .main-title {
+    font-size: 35px;
+    width: 201px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+  }
+  .background-main .main .main-container .main-text {
+    font-size: 18px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+  .background-main .main .main-container .main-action {
+    text-align: center;
+  }
+  .background-main .main .main-container .sale {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin-top: 59px;
+    margin-left: 12px;
+  }
+  .background-main .main .main-container .sale .sale-text {
+    text-align: center;
+  }
+  .background-main .main .main-container .sale .sale-text .sale-percentage {
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+  .background-main .main .main-container .sale .sale-text .sale-date {
+    font-size: 14px;
+  }
+  .background-main .main .main-container .quote {
+    position: absolute;
+    right: 11px;
+    bottom: -256px;
+    padding: 20px 19px 20px 19px;
+  }
+  .background-main .main .main-container .quote .quote-text {
+    font-size: 14px;
+    line-height: 1.214;
+    width: 230px;
+  }
+  .background-main .main .main-container .quote .quote-signature {
+    font-size: 14px;
+  }
+  .background {
+    background-image: url("../../images/background-320.png");
+  }
+  .background .products {
+    padding: 137px 0 107px 0;
+  }
+  .background .products .products-content {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .products .products-content .products-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+  .background .products .products-content .slick-slider {
+    position: relative;
+  }
+  .background .products .products-content .slick-slider .slick-prev {
+    position: absolute;
+    bottom: -50%;
+    left: 1px;
+    z-index: 100;
+    height: 20px;
+    width: 10px;
+  }
+  .background .products .products-content .slick-slider .slick-prev::before {
+    content: url(../images/slick-prev-320.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .background .products .products-content .slick-slider .slick-next {
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    right: 1px;
+    bottom: 1px;
+    z-index: 100;
+  }
+  .background .products .products-content .slick-slider .slick-next::before {
+    content: url(../images/slick-next-320.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .background .products .products-content .slick-slider .slider-item {
+    width: 139px;
+    height: 302px;
+    margin: 0 6px 0 6px;
+  }
+  .background .products .products-content .slick-slider .slider-item.slide1 {
+    background-image: url(../images/product1-320.png);
+  }
+  .background .products .products-content .slick-slider .slider-item.slide2 {
+    background-image: url(../images/product2-320.png);
+  }
+  .background .products .products-content .slick-slider .slider-item.slide3 {
+    background-image: url(../images/product3.png);
+  }
+  .background .products .products-content .slick-slider .slider-item .product-info {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .background .products .products-content .slick-slider .slider-item .product-info .product-name {
+    line-height: 1.222;
+    margin-bottom: 10px;
+  }
+  .background .products .products-content .slick-slider .slider-item .animal-safe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 13px 8px 13px;
+  }
+  .background .products .products-content .slick-slider .slider-item .animal-safe .footprint-shape {
+    margin-right: 7px;
+  }
+  .background .products .products-content .slick-slider .slider-item .animal-safe .animal-safe-text {
+    line-height: 1.167;
+    text-align: right;
+  }
+  .background .products .products-content .slider-controls {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 52px;
+  }
+  .background .products .products-content .slider-controls .slide-m-prev {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+    margin-right: 80px;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -23px;
+    right: calc(50% - 45px);
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    width: 80px;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots li {
+    margin: 0 0.25rem;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots button {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    text-indent: -9999px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #191917;
+  }
+  .background .products .products-content .slider-controls .slide-m-dots .slick-dots li.slick-active button {
+    border: 1px solid #191917;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 14px;
+    height: 14px;
+  }
+  .background .products .products-content .slider-controls .slide-m-next {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+    margin-left: 80px;
+  }
+  .background .reasons {
+    background-image: url("../../images/background-reasons320.png");
+    background-size: cover;
+    padding: 36px 0 133px 0;
+  }
+  .background .reasons .reasons-container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .reasons .reasons-container .background-reasons {
+    width: 290px;
+    height: auto;
+    position: relative;
+    background-image: none;
+    background-size: cover;
+    box-shadow: none;
+    padding: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-title {
+    margin-bottom: 50px;
+    margin-left: 0;
+    font-size: 28px;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks {
+    grid-template-columns: 290px;
+    width: 290px;
+    gap: 0;
+    display: grid;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    margin: 0 auto 40px auto;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason2 {
+    margin-top: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason.reason4 {
+    margin-top: 0;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-number {
+    font-size: 60.244px;
+    margin-right: 18px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-info .reasons-blocks .reason .reason-text {
+    margin-top: 0;
+    width: 100%;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  .background .reasons .reasons-container .background-reasons .reasons-quote {
+    bottom: -205px;
+    left: 11px;
+  }
+  .background .advantages {
+    padding: 129px 0 40px 0;
+  }
+  .background .advantages .advantages-container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .advantages .advantages-container .advantages-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+  .background .advantages .advantages-container .advantages-cards {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card1 .advantages-pic-wrapper1 {
+    margin-right: 15px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card2 .advantages-pic-wrapper2 {
+    order: 2;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card2 .advantages-text2 {
+    order: 1;
+    margin-right: 15px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card3 .advantages-pic-wrapper3 {
+    margin-right: 15px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card4 .advantages-pic-wrapper4 {
+    order: 2;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card4 .advantages-text4 {
+    order: 1;
+    margin-right: 15px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card5 {
+    margin-left: 0;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card.advantages-card5 .advantages-pic-wrapper5 {
+    margin-right: 15px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card .advantages-pic-wrapper {
+    height: 100px;
+    width: 100px;
+    background-color: #edece7;
+    box-shadow: 0 19px 21px 0 rgba(184, 183, 183, 0.35);
+    box-sizing: border-box;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card .advantages-pic-wrapper .advantages-pic {
+    height: 82px;
+  }
+  .background .advantages .advantages-container .advantages-cards .advantages-card .advantages-text {
+    font-size: 18px;
+    height: auto;
+    text-align: left;
+    width: 184px;
+  }
+  .background .exotic-plants {
+    padding: 40px 0 45px 0;
+  }
+  .background .exotic-plants .exotic-plants-container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-text {
+    max-width: 290px;
+    font-size: 16px;
+    line-height: 1.375;
+    margin-bottom: 49px;
+    text-align: center;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards {
+    display: grid;
+    grid-template-columns: 139px 139px;
+    grid-template-rows: 320px 287px 287px;
+    gap: 12px;
+    grid-template-areas: "exotic-plants-card5 exotic-plants-card5" "exotic-plants-card1 exotic-plants-card2" "exotic-plants-card3 exotic-plants-card4";
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 {
+    background-image: url(../images/exotic-plants1-320.png);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    width: 139px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card1;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card1 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 {
+    background-image: url(../images/exotic-plants2-320.png);
+    background-position: top center;
+    background-size: 100%;
+    margin-top: 0;
+    width: 139px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card2;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card2 .sticker-new {
+    right: 10px;
+    top: 10px;
+    width: 39px;
+    height: 39px;
+    font-size: 12px;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 {
+    background-image: url(../images/exotic-plants3.png);
+    background-position: 75%;
+    background-size: cover;
+    margin-top: 0;
+    width: 139px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card3;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card3 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 {
+    background-image: url(../images/exotic-plants4.png);
+    background-position: 75%;
+    background-size: cover;
+    margin-top: 0;
+    width: 139px;
+    height: 287px;
+    position: relative;
+    grid-area: exotic-plants-card4;
+    border: none;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/exotic-plants-background-small.png);
+    background-size: cover;
+    width: 100%;
+    height: 83px;
+    display: block;
+    padding: 12px 5px 12px 5px;
+    margin: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card4 .exotic-plants-card-name {
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .background .exotic-plants .exotic-plants-container .exotic-plants-cards .exotic-plants-card5 {
+    background-image: url(../images/exotic-plants5-320.png);
+    background-position: top center;
+    background-size: cover;
+    width: 290px;
+    height: 320px;
+  }
+  .background .master-class {
+    padding: 98px 0 100px 0;
+  }
+  .background .master-class .master-class-container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .master-class .master-class-container .master-class-title {
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 1.286;
+    width: 100%;
+  }
+  .background .master-class .master-class-container .master-class-text {
+    display: none;
+  }
+  .background .master-class .master-class-container .master-class-video {
+    width: 100%;
+    height: 168px;
+  }
+  .background .order {
+    padding-bottom: 130px;
+    background-image: url("../../images/background-form.png");
+    background-size: cover;
+    background-position: bottom;
+    background-color: #f6f2eb;
+  }
+  .background .order .container-order {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .order .container-order .order-form-background {
+    padding: 30px 16px 30px 16px;
+    width: 290px;
+  }
+  .background .order .container-order .order-form-background .order-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .background .order .container-order .order-form-background .order-text {
+    width: 234px;
+    line-height: 1.167;
+    margin-bottom: 40px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name {
+    width: 100%;
+    position: relative;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .order-form-text {
+    font-size: 15px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .order-form-input {
+    padding: 17px 15px 16px 41px;
+    font-size: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .error-input {
+    bottom: -40px;
+    left: 25px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-name .order-name-icon {
+    bottom: 0;
+    left: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number {
+    width: 100%;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .order-form-text {
+    font-size: 15px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .order-form-input {
+    padding: 17px 15px 16px 41px;
+    font-size: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .error-input {
+    font-size: 13px;
+    font-family: UbuntuRegular, sans-serif;
+    color: #c20000;
+    bottom: -38px;
+    right: 34px;
+    width: 200px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-number .order-number-icon {
+    bottom: -4px;
+    right: 225px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower {
+    width: 100%;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower .order-form-text {
+    font-size: 15px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower .order-form-input {
+    padding: 17px 15px 16px 41px;
+    font-size: 14px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-flower .error-input {
+    bottom: -35px;
+    right: 34px;
+    width: 200px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-flower-icon {
+    bottom: 0;
+    right: 225px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-flower-placeholder {
+    left: -216px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-checkbox .error-input {
+    bottom: -18px;
+    right: 31px;
+    width: 200px;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-checkbox .checkbox-text {
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 1.286;
+  }
+  .background .order .container-order .order-form-background .order-form .order-input-checkbox .order-checkbox-terms {
+    bottom: 5px;
+    right: 240px;
+  }
+  .background .order .container-order .order-form-background .order-button {
+    width: 100%;
+  }
+  .background .order .container-order .thanks {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    padding: 165px 19px 0 20px;
+    top: 0;
+    left: 0;
+    background-color: #f6f2eb3b;
+    z-index: 100;
+  }
+  .background .order .container-order .thanks.open {
+    display: flex;
+    align-items: center;
+  }
+  .background .order .container-order .thanks .close-thanks {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .background .order .container-order .thanks .close-thanks .close-image-thanks {
+    width: 100%;
+  }
+  .background .order .container-order .thanks .thanks-block .thanks-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 1.25;
+    width: 280px;
+  }
+  .background .order .container-order .thanks .thanks-block .thanks-title .thanks-title br {
+    display: inline-block;
+  }
+  .background .order .container-order .thanks .thanks-block .thanks-text {
+    font-size: 18px;
+    line-height: 1.222;
+    text-align: center;
+    margin: 0 auto;
+    width: 280px;
+  }
+  .background .instagram {
+    padding: 72px 0 60px 0;
+  }
+  .background .instagram .instagram-container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background .instagram .instagram-container .instagram-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .background .instagram .instagram-container .instagram-link {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .background .instagram .instagram-container .instagram-photo {
+    width: 290px;
+    display: grid;
+    grid-template-columns: 145px 145px;
+    grid-template-rows: 290px 107px 107px;
+    gap: 0;
+    grid-template-areas: "photo3 photo3" "photo1 photo2" "photo4 photo5";
+  }
+  .background .instagram .instagram-container .instagram-photo .photo1 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo2 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo3 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo4 {
+    width: 100%;
+  }
+  .background .instagram .instagram-container .instagram-photo .photo5 {
+    width: 100%;
+  }
+  .footer {
+    padding: 60px 0 57px 0;
+  }
+  .footer .footer-container {
+    width: 290px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .footer .footer-container .block1 {
+    width: 100%;
+  }
+  .footer .footer-container .block1 .logo {
+    margin: 0 auto 49px auto;
+  }
+  .footer .footer-container .block1 .social-network {
+    display: none;
+  }
+  .footer .footer-container .block2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer .footer-container .block2 .footer-menu {
+    margin-bottom: 31px;
+  }
+  .footer .footer-container .block2 .footer-menu .footer-menu-text {
+    margin-bottom: 19px;
+  }
+  .footer .footer-container .block2 .contact-number {
+    display: none;
+  }
+  .footer .footer-container .block3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer .footer-container .block3 .address {
+    margin: 0 auto 50px auto;
+  }
+  .footer .footer-container .block3 .address .footer-menu-text {
+    margin-bottom: 18px;
+  }
+  .footer .footer-container .block3 .address .address-text {
+    max-width: 204px;
+    margin: 0 auto;
+  }
+  .footer .footer-container .block3 .address .address-text br {
+    display: inline-block;
+  }
+  .footer .footer-container .block3 .mailing {
+    margin-bottom: 50px;
+  }
+  .footer .footer-container .block3 .mailing .mailing-text {
+    margin: 0 auto 20px auto;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form {
+    display: block;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form .mailing-thanks {
+    margin: 0 auto;
+    width: 100%;
+    height: 110px;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form .mailing-input {
+    width: 290px;
+    margin-bottom: 10px;
+  }
+  .footer .footer-container .block3 .mailing .mailing-form .mailing-btn {
+    width: 290px;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive {
+    display: block;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive .footer-menu-text {
+    font-size: 15px;
+    font-family: UbuntuMedium, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 18px;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive .contact-number-number {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+  }
+  .footer .footer-container .block3 .contact-number-adaptive .contact-number-number .number-text {
+    margin-right: 13px;
+    font-size: 24px;
+    font-family: PhilosopherRegular, sans-serif;
+    color: #d67515;
+  }
+  .footer .footer-container .block3 .social-network-adaptive {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-instagram {
+    margin: 0 8px 0 8px;
+    width: 35px;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-instagram:hover {
+    opacity: 0.9;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-telegram {
+    margin: 0 8px 0 8px;
+    width: 38px;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-telegram:hover {
+    opacity: 0.9;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-facebook {
+    margin: 0 8px 0 8px;
+    width: 35px;
+  }
+  .footer .footer-container .block3 .social-network-adaptive .footer-facebook:hover {
+    opacity: 0.9;
+  }
+}

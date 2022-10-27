@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flornea</title>
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+    <link rel="stylesheet" href="dist/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="background-main">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" class="logo-img">
+            </div>
+            <nav class="menu" id="menu">
+                <div class="close">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                        </g>
+                    </g>
+                </svg>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Наши растения</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О суккулентах</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Преимущества</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Плотоядные растения</a>
+                    </li>
+                    <li>
+                        <a href="#" class="phone">
+                            <div class="phone-icon">
+                                <img src="images/phone-icon.png" alt="phone">
+                            </div>
+                            <div class="number">
+                                +7 (905) 145 12 01
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <div class="phone-icon">
+                    <img src="images/phone-icon.png" alt="phone">
+                </div>
+                <div class="number">
+                    +7 (905) 145 12 01
+                </div>
+            </div>
+            <div class="burger" id="burger">
+                <svg class="burger-svg"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="40px" height="22px">
+                    <path fill-rule="evenodd" fill="#3c3c3c"
+                          d="M0.0,0.0 L39.999,0.0 L39.999,1.999 L0.0,1.999 L0.0,0.0 Z"/>
+                    <path fill-rule="evenodd" fill="#3c3c3c"
+                          d="M0.0,10.0 L39.999,10.0 L39.999,12.0 L0.0,12.0 L0.0,10.0 Z"/>
+                    <path fill-rule="evenodd" fill="#3c3c3c"
+                          d="M0.0,19.999 L39.999,19.999 L39.999,21.999 L0.0,21.999 L0.0,19.999 Z"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main-background">
+            <div class="main-container">
+                <h1 class="main-title">Цветочный шоу-рум № 1 в России</h1>
+                <div class="main-text">Суккулетны на любой вкус и темперамент</div>
+                <div class="main-action">
+                    <button type="button" class="btn" id="see-catalog">Смотреть каталог</button>
+                </div>
+                <div class="sale">
+                    <div class="sale-text">
+                        <div class="sale-percentage">-15%</div>
+                        <div class="sale-date">до 24.12</div>
+                    </div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">«Это мой лучший друг: всегда в хорошем настроении и не задаёт лишних
+                        вопросов»
+                    </div>
+                    <div class="quote-signature">Léon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="background">
+
+    <section id="products" class="products">
+        <div class="products-content">
+            <h2 class="products-title">Наши растения</h2>
+            <div class="slick-slider">
+                <div class="slider-item slide1">
+                    <div class="animal-safe">
+                        <img src="images/footprint-shape.png" alt="footprint shape"
+                             class="footprint-shape">
+                        <div class="animal-safe-text">Безопасен для животных</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Эониум</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+                <div class="slider-item slide2">
+                    <div class="product-info">
+                        <div class="product-name">Адромискус Купера</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+                <div class="slider-item slide3">
+                    <div class="animal-safe">
+                        <img src="images/footprint-shape.png" alt="footprint shape" class="footprint-shape">
+                        <div class="animal-safe-text">Безопасен для животных</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Бригамия</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+
+                <div class="slider-item slide1">
+                    <div class="animal-safe">
+                        <img src="images/footprint-shape.png" alt="footprint shape"
+                             class="footprint-shape">
+                        <div class="animal-safe-text">Безопасен для животных</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Эониум</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+                <div class="slider-item slide2">
+                    <div class="product-info">
+                        <div class="product-name">Адромискус Купера</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+                <div class="slider-item slide3">
+                    <div class="animal-safe">
+                        <img src="images/footprint-shape.png" alt="footprint shape" class="footprint-shape">
+                        <div class="animal-safe-text">Безопасен для животных</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Бригамия</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+
+                <div class="slider-item slide1">
+                    <div class="animal-safe">
+                        <img src="images/footprint-shape.png" alt="footprint shape"
+                             class="footprint-shape">
+                        <div class="animal-safe-text">Безопасен для животных</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Эониум</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+                <div class="slider-item slide2">
+                    <div class="product-info">
+                        <div class="product-name">Адромискус Купера</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+                <div class="slider-item slide3">
+                    <div class="animal-safe">
+                        <img src="images/footprint-shape.png" alt="footprint shape" class="footprint-shape">
+                        <div class="animal-safe-text">Безопасен для животных</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Бригамия</div>
+                        <div class="product-price">180 руб</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <a type="button" class="slide-m-prev">
+                    <img src="images/slick-prev.png" alt="previous">
+                </a>
+                <div class="slide-m-dots"></div>
+                <a type="button" class="slide-m-next">
+                    <img src="images/slick-next.png" alt="next">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons">
+        <div class="reasons-container">
+            <div class="background-reasons">
+                <div class="reasons-info">
+                    <h2 class="reasons-title">5 причин приобрести суккуленты</h2>
+                    <div class="reasons-blocks">
+                        <div class="reason reason1">
+                            <div class="reason-number">1</div>
+                            <div class="reason-text">
+                                <p>Простота в уходе.</p>
+                                Заниматься выращиванием сможет каждый, не смотря
+                                на опыт.
+                            </div>
+                        </div>
+                        <div class="reason reason2">
+                            <div class="reason-number">2</div>
+                            <div class="reason-text">
+                                <p>Компактность.</p>
+                                Некоторые виды суккулентов имеют высоту около 1 см.
+                            </div>
+                        </div>
+                        <div class="reason reason3">
+                            <div class="reason-number">3</div>
+                            <div class="reason-text">
+                                <p>Не любят воду.</p>
+                                Достаточно поливать растение раз в две недели.
+                            </div>
+                        </div>
+                        <div class="reason reason4">
+                            <div class="reason-number">4</div>
+                            <div class="reason-text">
+                                <p>Термоустойчивые.</p>
+                                Растения спокойно переживают понижение температуры до нуля и повышения до 50
+                                градусов.
+                            </div>
+                        </div>
+                        <div class="reason reason5">
+                            <div class="reason-number">5</div>
+                            <div class="reason-text">
+                                <p>Разнообразие форм и цвета.</p>
+                                Растения бывают в форме камня, морской
+                                звезды и даже дельфинов. Все оттенки даже не перечесть.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reasons-quote">
+                    <div class="quote-text">«Сколько бы мы ни говорили о пустоте жизни, иногда достаточно лишь одного
+                        цветка, чтобы нас разубедить»
+                    </div>
+                    <div class="quote-signature">Anatole France</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages-container">
+            <h2 class="advantages-title">Только у нас</h2>
+            <div class="advantages-cards">
+                <div class="advantages-card advantages-card1">
+                    <div class="advantages-pic-wrapper advantages-pic-wrapper1">
+                        <img src="images/advantages1.png" alt="" class="advantages-pic">
+                    </div>
+                    <div class="advantages-text advantages-text1">Только здоровые растения</div>
+                </div>
+                <div class="advantages-card advantages-card2">
+                    <div class="advantages-pic-wrapper advantages-pic-wrapper2">
+                        <img src="images/advantages2.png" alt="" class="advantages-pic">
+                    </div>
+                    <div class="advantages-text advantages-text2">Специальный грунт</div>
+                </div>
+                <div class="advantages-card advantages-card3">
+                    <div class="advantages-pic-wrapper advantages-pic-wrapper3">
+                        <img src="images/advantages3.png" alt="" class="advantages-pic">
+                    </div>
+                    <div class="advantages-text advantages-text3">Флорариумы на заказ</div>
+                </div>
+                <div class="advantages-card advantages-card4">
+                    <div class="advantages-pic-wrapper advantages-pic-wrapper4">
+                        <img src="images/advantages4.png" alt="" class="advantages-pic">
+                    </div>
+                    <div class="advantages-text advantages-text4">Бесплатная доставка от 1 500 руб.</div>
+                </div>
+                <div class="advantages-card advantages-card5">
+                    <div class="advantages-pic-wrapper advantages-pic-wrapper5">
+                        <img src="images/advantages5.png" alt="" class="advantages-pic">
+                    </div>
+                    <div class="advantages-text advantages-text5">Сюрприз в коробке</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exotic-plants" class="exotic-plants">
+        <div class="exotic-plants-container">
+            <div class="exotic-plants-title">Ценителям экзотики</div>
+            <div class="exotic-plants-text">
+                Оригинальные хищные растения украсят ваш подоконник
+                и подойдут в подарок друзям
+            </div>
+            <div class="exotic-plants-cards">
+                <div class="exotic-plants-card1">
+                    <div class="exotic-plants-background">
+                        <div class="exotic-plants-card-name">Серрацения</div>
+                        <div class="exotic-plants-card-price">580 руб</div>
+                    </div>
+                </div>
+                <div class="exotic-plants-card2">
+                    <div class="exotic-plants-background">
+                        <div class="exotic-plants-card-name">Венерина мухоловка</div>
+                        <div class="exotic-plants-card-price">360 руб</div>
+                    </div>
+                    <div class="sticker-new">NEW</div>
+                </div>
+                <div class="exotic-plants-card3">
+                    <div class="exotic-plants-background">
+                        <div class="exotic-plants-card-name">Росянка капская</div>
+                        <div class="exotic-plants-card-price">420 руб</div>
+                    </div>
+                </div>
+                <div class="exotic-plants-card4">
+                    <div class="exotic-plants-background">
+                        <div class="exotic-plants-card-name">Непентес</div>
+                        <div class="exotic-plants-card-price">720 руб</div>
+                    </div>
+                </div>
+                <div class="exotic-plants-card5">
+                    <div class="exotic-plants-background">
+                        <div class="exotic-plants-card-name">Непентес</div>
+                        <div class="price">
+                            <div class="exotic-plants-card-price-crossed">800 руб</div>
+                            <div class="exotic-plants-card-price">720 руб</div>
+                        </div>
+                    </div>
+                    <div class="ribbon">
+                        Скидка 30%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="master-class">
+        <div class="master-class-container">
+            <h2 class="master-class-title">Мастер-класс по созданию флорариума</h2>
+            <div class="master-class-text">Выберите форму, растения, декор и создайте свой флорариум</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ne3esfFbO7E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="master-class-video"></iframe>
+        </div>
+
+    </section>
+
+    <section class="order">
+        <div class="container-order">
+            <div class="order-form-background">
+                <h2 class="order-title" id="order-title">Оформление заказа</h2>
+                <div class="order-text">
+                    Заполните форму и ожидайте звонка нашего
+                    менеджера для уточнения вашего заказа
+                </div>
+                <form class="order-form">
+                    <label class="order-input-name">
+                        <div class="order-form-text">Имя</div>
+                        <img src="images/form-icon1.png" alt="person-icon" class="order-name-icon">
+                        <input type="text" class="order-form-input" placeholder="Введите имя" id="order-name">
+                        <div class="error-input">Напишите ваше имя</div>
+                    </label>
+                    <label class="order-input-number">
+                        <div class="order-form-text">Номер телефона</div>
+                        <img src="images/form-icon2.png" alt="phone-icon" class="order-number-icon">
+                        <input type="text" class="order-form-input" placeholder="+7 (_ _ _) _ _ _-_ _-_ _"
+                               id="order-number">
+                        <div class="error-input">Напишите ваш номер</div>
+                    </label>
+                    <label class="order-input-flower">
+                        <div class="order-form-text">Название цветка</div>
+                        <img src="images/form-icon3.png" alt="flower-icon" class="order-flower-icon">
+                        <div class="order-flower-placeholder" id="order-flower-placeholder">Выберите название из
+                            списка
+                        </div>
+                        <select class="order-form-input order-flower-input" id="order-product">
+                            <option disabled selected hidden></option>
+                            <option>Эониум</option>
+                            <option>Адромискус Купера</option>
+                            <option>Бригамия</option>
+                        </select>
+                        <div class="error-input">Выберите, что хотите заказать</div>
+                    </label>
+                    <label class="order-input-checkbox">
+                        <div class="error-input">Подтвердите ваше согласие</div>
+                        <input type="checkbox" class="order-checkbox-terms">
+                        <div class="checkbox-text"> Я согласен на обработку персональных данных</div>
+                    </label>
+
+                </form>
+                <button type="button" class="order-button" id="order-submit">Оформить заказ</button>
+            </div>
+            <div class="thanks" id="thanks">
+                <a class="close-thanks" id="close-thanks">
+                    <img src="images/close.png" alt="close" class="close-image-thanks">
+                </a>
+                <div class="thanks-block">
+                    <div class="thanks-title">Спасибо за ваше доверие! <br>
+                        Мы работаем для вас.
+                    </div>
+                    <div class="thanks-text">Наш менеджер свяжется с вами в течении часа и поможет подобрать то, что вам
+                        нужно,
+                        определиться с методом оплаты и наиболее быстрым вариантом достаки.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram">
+        <div class="instagram-container">
+            <h2 class="instagram-title">Мы в Instagram</h2>
+            <div class="instagram-link">@flornea_showroom</div>
+            <div class="instagram-photo">
+                <img src="images/photo1.png" alt="photo 1" class="photo1">
+                <img src="images/photo2.png" alt="photo 2" class="photo2">
+                <img src="images/photo3.png" alt="photo 3" class="photo3">
+                <img src="images/photo4.png" alt="photo 4" class="photo4">
+                <img src="images/photo5.png" alt="photo 5" class="photo5">
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="block1">
+            <div class="logo">
+                <img src="images/logo-footer.png" alt="logo" class="logo-img">
+            </div>
+            <div class="social-network">
+                <a href="#">
+                    <img src="images/instagram.png" alt="instagram" class="footer-instagram">
+                </a>
+                <a href="#">
+                    <img src="images/telegram.png" alt="telegram" class="footer-telegram">
+                </a>
+                <a href="#">
+                    <img src="images/facebook.png" alt="facebook" class="footer-facebook">
+                </a>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="footer-menu">
+                <div class="footer-menu-text">
+                    <a href="#products" class="footer-menu-text-link">Наши растения</a>
+                    </div>
+                <div class="footer-menu-text">
+                    <a href="#exotic-plants" class="footer-menu-text-link">Плотоядные растения</a>
+                    </div>
+            </div>
+            <div class="contact-number">
+                <div class="footer-menu-text">Мы всегда на связи:</div>
+                <div class="contact-number-number">
+                    <img src="images/phone-icon-footer.png" alt="phone icon">
+                    <div class="number-text">+7 (905) 145 12 01</div>
+                </div>
+            </div>
+        </div>
+        <div class="block3">
+            <div class="address">
+                <div class="footer-menu-text">
+                    Адрес главного офиса:
+                </div>
+                <div class="address-text">
+                    г. Ростов-на-Дону, <br> ул. Орджоникидзе, 35, блок 2 050471
+                </div>
+            </div>
+            <div class="contact-number-adaptive">
+                <div class="footer-menu-text">Мы всегда на связи:</div>
+                <div class="contact-number-number">
+                    <img src="images/phone-icon-footer.png" alt="phone icon">
+                    <div class="number-text">+7 (905) 145 12 01</div>
+                </div>
+            </div>
+            <div class="mailing">
+                <div class="mailing-text">
+                    Подпишитесь на рассылку важных
+                    новостей нашего магазина
+                </div>
+                <div class="mailing-form">
+                    <div class="mailing-thanks">Спасибо за подписку!</div>
+                    <input type="text" class="mailing-input" placeholder="Ваш e-mail">
+                    <button type="button" class="mailing-btn" id="mailing-btn-submit">Подписаться</button>
+                </div>
+            </div>
+            <div class="social-network-adaptive">
+                <a href="#">
+                    <img src="images/instagram.png" alt="instagram" class="footer-instagram">
+                </a>
+                <a href="#">
+                    <img src="images/telegram.png" alt="telegram" class="footer-telegram">
+                </a>
+                <a href="#">
+                    <img src="images/facebook.png" alt="facebook" class="footer-facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="loader">
+    <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<script src="scripts/jquery-3.6.1.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
